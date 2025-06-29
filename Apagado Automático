@@ -1,6 +1,7 @@
-@echo off
+
 title Apagado Automático Simple
 cls
+@echo off
 echo ==============================
 echo    MENU DE APAGADO PROGRAMADO
 echo ==============================
