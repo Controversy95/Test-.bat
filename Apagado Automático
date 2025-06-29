@@ -1,0 +1,37 @@
+@echo off
+title Apagado Automático Simple
+cls
+echo ==============================
+echo    MENU DE APAGADO PROGRAMADO
+echo ==============================
+echo 1. Apagar en 30 minutos
+echo 2. Apagar en 1 hora
+echo 3. Apagar en 1 hora y 30 min
+echo 4. Apagar en 2 horas
+echo 5. Apagar en 2 horas y 30 min
+echo 6. Apagar en 3 horas
+echo 7. Apagar en 3 horas y 30 min
+echo 8. Apagar en 4 horas
+echo 9. Apagar en 4 horas y 30 min
+echo 10. Apagar en 5 horas
+echo 11. Apagar en 5 horas y 30 min
+echo 12. Cancelar apagado programado
+echo 13. Salir
+echo ==============================
+set /p opcion="Elige una opcion (1-13): "
+
+if "%opcion%"=="1" shutdown -s -t 1800 && echo PC se apagará en 30 minutos
+if "%opcion%"=="2" shutdown -s -t 3600 && echo PC se apagará en 1 hora
+if "%opcion%"=="3" shutdown -s -t 5400 && echo PC se apagará en 1 hora y 30 min
+if "%opcion%"=="4" shutdown -s -t 7200 && echo PC se apagará en 2 horas
+if "%opcion%"=="5" shutdown -s -t 9000 && echo PC se apagará en 2 horas y 30 min
+if "%opcion%"=="6" shutdown -s -t 10800 && echo PC se apagará en 3 horas
+if "%opcion%"=="7" shutdown -s -t 12600 && echo PC se apagará en 3 horas y 30 min
+if "%opcion%"=="8" shutdown -s -t 14400 && echo PC se apagará en 4 horas
+if "%opcion%"=="9" shutdown -s -t 16200 && echo PC se apagará en 4 horas y 30 min
+if "%opcion%"=="10" shutdown -s -t 18000 && echo PC se apagará en 5 horas
+if "%opcion%"=="11" shutdown -s -t 19800 && echo PC se apagará en 5 horas y 30 min
+if "%opcion%"=="12" shutdown -a && echo Apagado cancelado!
+if "%opcion%"=="13" exit
+
+timeout /t 10 >nul
